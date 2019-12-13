@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha test/**",
-    "coverage": "nyc npm run test ",
-    "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
+    "coverage": "nyc npm run test && nyc report --reporter=text-lcov > coverage.lcov && codecov -t 17981a06-37d7-45b1-a367-dca5668e2044",
     "cs-lint": "eslint .",
     "cs-fix": "eslint --fix ."
   },

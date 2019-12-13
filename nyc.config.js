@@ -5,10 +5,10 @@
 
 module.exports = {
   all: false,
-  'check-coverage': true,
-  reporter: ['lcov', 'text-summary'],
-  'report-dir': './.nyc_output/coverage',
-  'temp-dir': './.nyc_output/temp'
+  'check-coverage': true
+  // reporter: ['lcov', 'text-summary'],
+  // 'report-dir': './.nyc_output/coverage',
+  // 'temp-dir': './.nyc_output/temp'
   // include:
   // skip-full
   // exclude: platformExclude.concat(defaultExclude)
