@@ -1,10 +1,6 @@
 [![Build Status](https://www.travis-ci.org/baronwei6668/node-learn.svg?branch=master)](https://www.travis-ci.org/baronwei6668/node-learn)
 [![codecov](https://codecov.io/gh/baronwei6668/node-learn/branch/master/graph/badge.svg)](https://codecov.io/gh/baronwei6668/node-learn)
 
-```
-./node_modules/.bin/codecov
-```
-
 # nodedemo
 
 #### 介绍
