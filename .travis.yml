@@ -4,6 +4,7 @@ node_js:
   - '12'
 brancher:
   only:
+    - 'dev'
     - 'master'
 script:
   - 'npm run coverage'
