@@ -6,6 +6,7 @@
   "scripts": {
     "test": "mocha test/**",
     "coverage": "nyc npm run test ",
+    "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
     "cs-lint": "eslint .",
     "cs-fix": "eslint --fix ."
   },
