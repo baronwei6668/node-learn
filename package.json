@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/baronwei6668/node-learn#readme",
   "devDependencies": {
+    "benchmark": "^2.1.4",
     "chai": "^4.2.0",
     "codecov": "^3.6.1",
     "editorconfig": "^0.15.3",
