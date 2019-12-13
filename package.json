@@ -1,0 +1,31 @@
+{
+  "name": "node-learn",
+  "version": "0.0.1",
+  "description": "learn node js",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/*",
+    "coverage": "nyc npm run test "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baronwei6668/node-learn.git"
+  },
+  "keywords": [
+    "node",
+    "learn"
+  ],
+  "author": "baron.wei",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/baronwei6668/node-learn/issues"
+  },
+  "homepage": "https://github.com/baronwei6668/node-learn#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^6.7.2",
+    "istanbul": "^0.4.5",
+    "mocha": "^6.2.2",
+    "nyc": "^14.1.1"
+  }
+}

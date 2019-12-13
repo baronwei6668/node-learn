@@ -1,0 +1,5 @@
+# node_modules 默认就有不用写
+test
+.editorconfig
+.eslintignore
+.eslintrc.js
