@@ -1,3 +1,4 @@
+'use strict'
 const { num1, num2 } = require('../../src//util/fn')
 const Benchmark = require('benchmark')
 const suite = new Benchmark.Suite()

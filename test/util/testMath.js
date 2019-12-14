@@ -1,3 +1,4 @@
+'use strict'
 // test target
 const math = require('../../src/util/math')
 // mocha 自动引入，此处导入只是为了eslint不报错
