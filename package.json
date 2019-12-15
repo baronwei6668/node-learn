@@ -4,10 +4,18 @@
   "description": "learn node js",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test/**",
-    "coverage": "nyc npm run test && nyc report --reporter=text-lcov > coverage.lcov && codecov",
+    "test": "npm run coverage && npm run jestc && npm run webdriver",
+    "mocha": "mocha test/util/**",
+    "coverage": "nyc npm run mocha && nyc report --reporter=text-lcov > coverage.lcov",
+    "jestc": "jest test/**",
+    "webdriver": "istanbul cover mocha test/web/** --report lcovonly -- -R spec",
+    "webdriverio": "./node_modules/.bin/wdio wdio.conf.js",
     "cs-lint": "eslint .",
     "cs-fix": "eslint --fix ."
+  },
+  "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
   },
   "pre-commit": [
     "cs-fix",
@@ -29,14 +37,51 @@
   },
   "homepage": "https://github.com/baronwei6668/node-learn#readme",
   "devDependencies": {
+    "@babel/cli": "^7.7.5",
+    "@babel/core": "^7.7.5",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/plugin-proposal-decorators": "^7.7.4",
+    "@babel/plugin-proposal-export-namespace-from": "^7.7.4",
+    "@babel/plugin-proposal-function-sent": "^7.7.4",
+    "@babel/plugin-proposal-json-strings": "^7.7.4",
+    "@babel/plugin-proposal-numeric-separator": "^7.7.4",
+    "@babel/plugin-proposal-throw-expressions": "^7.7.4",
+    "@babel/plugin-syntax-dynamic-import": "^7.7.4",
+    "@babel/plugin-syntax-import-meta": "^7.7.4",
+    "@babel/plugin-transform-arrow-functions": "^7.7.4",
+    "@babel/preset-env": "^7.7.6",
+    "@babel/preset-react": "^7.7.4",
+    "@wdio/cli": "^5.16.15",
+    "@wdio/local-runner": "^5.16.15",
+    "@wdio/mocha-framework": "^5.16.15",
+    "@wdio/spec-reporter": "^5.16.11",
+    "@wdio/sync": "^5.16.15",
+    "babel-eslint": "^10.0.3",
+    "babel-jest": "^24.9.0",
+    "babel-loader": "^8.0.6",
     "benchmark": "^2.1.4",
     "chai": "^4.2.0",
+    "chromedriver": "^79.0.0",
     "codecov": "^3.6.1",
     "editorconfig": "^0.15.3",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1",
+    "enzyme-to-json": "^3.4.3",
     "eslint": "^6.7.2",
     "istanbul": "^0.4.5",
+    "jest": "^24.9.0",
     "mocha": "^6.2.2",
-    "nyc": "^14.1.1"
+    "node-gyp": "^6.0.1",
+    "node-pre-gyp": "^0.14.0",
+    "nyc": "^14.1.1",
+    "react-dom": "^16.12.0",
+    "react-test-renderer": "^16.12.0",
+    "regenerator-runtime": "^0.13.3",
+    "selenium-webdriver": "^4.0.0-alpha.5",
+    "sinon": "^7.5.0",
+    "wdio-chromedriver-service": "^5.0.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "react": "^16.12.0"
+  }
 }
