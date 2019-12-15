@@ -9,7 +9,7 @@
     "mocha": "mocha test/util/**",
     "coverage": "nyc npm run mocha && nyc report --reporter=text-lcov > coverage.lcov",
     "jestc": "jest test/**",
-    "webdriver": "mocha test/web/**",
+    "webdriver": "istanbul cover _mocha test/web/**",
     "webdriverio": "./node_modules/.bin/wdio wdio.conf.js",
     "cs-lint": "eslint .",
     "cs-fix": "eslint --fix ."

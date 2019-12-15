@@ -4,7 +4,7 @@ const By = webdriver.By
 const chromeDriver = require('selenium-webdriver/chrome')
 
 describe('百度首页 UI 测试', function() {
-  this.timeout(1000)
+  // this.timeout(1000)
 
   let driver
 
