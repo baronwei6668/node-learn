@@ -4,7 +4,8 @@
   "description": "learn node js",
   "main": "index.js",
   "scripts": {
-    "test": "npm run coverage && npm run jestc && npm run webdriver",
+    "test": "npm run coverage && npm run jestc",
+    "testall": "npm run coverage && npm run jestc && npm run webdriver",
     "mocha": "mocha test/util/**",
     "coverage": "nyc npm run mocha && nyc report --reporter=text-lcov > coverage.lcov",
     "jestc": "jest test/**",
