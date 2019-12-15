@@ -1,5 +1,5 @@
 'use strict'
-// test target
+// mocha+chai+assert(原生)
 const math = require('../../src/util/math')
 // mocha 自动引入，此处导入只是为了eslint不报错
 const { describe, it } = require('mocha')

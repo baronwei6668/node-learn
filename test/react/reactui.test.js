@@ -1,4 +1,5 @@
 'use strict'
+// jest+enzyme测试
 import React from 'react'
 
 import { configure, mount } from 'enzyme'
