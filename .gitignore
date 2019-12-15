@@ -4,7 +4,8 @@
 # *代表任意个字符
 # ?代表任意一个字符
 # **匹配多级目录
-screenshort/*png
+puppeteer/screenshort/*png
+puppeteer/pdf/*pdf
 #nyc
 .nyc_output
 # Logs

@@ -1,8 +1,7 @@
 const puppeteer = require('puppeteer')
-const config = require('../../src/default/config')
+const config = require('../../default/config')
 
-// puppeteer-core
-let screenshortfn = async () => {
+let screenshort = async () => {
   const browser = await puppeteer.launch()
   const page = await browser.newPage()
   await page.goto('https:www.baidu.com')
@@ -13,4 +12,4 @@ let screenshortfn = async () => {
   await browser.close()
 }
 
-screenshortfn()
+screenshort()
