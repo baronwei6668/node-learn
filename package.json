@@ -9,7 +9,7 @@
     "mocha": "mocha test/util/**",
     "coverage": "nyc npm run mocha && nyc report --reporter=text-lcov > coverage.lcov",
     "jestc": "jest test/**",
-    "webdriver": "istanbul cover _mocha test/web/**",
+    "webdriver": "istanbul cover _mocha   --reporter lcovonly -- -R spec test/web/**",
     "webdriverio": "./node_modules/.bin/wdio wdio.conf.js",
     "cs-lint": "eslint .",
     "cs-fix": "eslint --fix ."
@@ -21,7 +21,7 @@
   "pre-commit": [
     "cs-fix",
     "cs-lint",
-    "coverage"
+    "test"
   ],
   "repository": {
     "type": "git",
