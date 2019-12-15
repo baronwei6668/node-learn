@@ -33,7 +33,7 @@ describe('百度首页 UI 测试', function() {
     })
   })
 
-  it('搜索 test', async () => {
+  it('搜索 test', async done => {
     const input = await driver.findElement(By.id('kw'))
     await input.sendKeys('test')
     const button = await driver.findElement(By.id('su'))
@@ -44,6 +44,7 @@ describe('百度首页 UI 测试', function() {
     await driver.sleep(1000)
     const title = await driver.getTitle()
     expect(title).to.equal('test_百度搜索')
+    done()
   })
 
   after(() => {
